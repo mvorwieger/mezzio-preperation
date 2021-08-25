@@ -47,8 +47,11 @@
         "laminas/laminas-stdlib": "^3.3.1",
         "laminas/laminas-zendframework-bridge": "^1.2.0",
         "mezzio/mezzio": "^3.5.0",
+        "mezzio/mezzio-authentication": "^1.2",
+        "mezzio/mezzio-authentication-session": "^1.1",
         "mezzio/mezzio-helpers": "^5.6.0",
         "mezzio/mezzio-laminasrouter": "^3.0.1",
+        "mezzio/mezzio-session-ext": "^1.11",
         "mezzio/mezzio-twigrenderer": "^2.7"
     },
     "require-dev": {

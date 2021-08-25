@@ -2,7 +2,9 @@
 
 namespace App\Handler;
 
+use Closure;
 use Laminas\Diactoros\Response\HtmlResponse;
+use Mezzio\Authentication\UserInterface;
 use Mezzio\Template\TemplateRendererInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -19,7 +21,8 @@ class CarPageHandler implements RequestHandlerInterface
 
     public function handle(ServerRequestInterface $request): ResponseInterface
     {
-        return new HtmlResponse($this->renderer->render('app::car-page'));
-        // TODO: Implement handle() method.
+        $user = $request->getAttribute(UserInterface::class);
+
+        return new HtmlResponse($this->renderer->render('app::car-page', ["user" => $user]), );
     }
 }

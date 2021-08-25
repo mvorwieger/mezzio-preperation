@@ -38,7 +38,26 @@ use Psr\Container\ContainerInterface;
  */
 
 return static function (Application $app, MiddlewareFactory $factory, ContainerInterface $container): void {
+
     $app->get('/', App\Handler\HomePageHandler::class, 'home');
+
     $app->get('/car', \App\Handler\CarPageHandler::class, 'car');
+
     $app->get('/api/ping', App\Handler\PingHandler::class, 'api.ping');
+
+    $app->get('/secure', [
+        \Mezzio\Session\SessionMiddleware::class,
+        \Mezzio\Authentication\AuthenticationMiddleware::class,
+        \App\Handler\CarPageHandler::class
+    ], 'secure_car');
+
+    $app->route(
+        '/login',
+        [
+            Mezzio\Session\SessionMiddleware::class,
+            App\Login\LoginHandler::class,
+        ],
+        ['GET', 'POST'],
+        'login'
+    );
 };
