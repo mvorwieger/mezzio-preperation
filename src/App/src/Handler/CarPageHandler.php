@@ -1,8 +1,8 @@
 <?php
+declare(strict_types=1);
 
 namespace App\Handler;
 
-use Closure;
 use Laminas\Diactoros\Response\HtmlResponse;
 use Mezzio\Authentication\UserInterface;
 use Mezzio\Template\TemplateRendererInterface;

@@ -4,26 +4,26 @@ declare(strict_types=1);
 
 namespace App\Login;
 
+use Laminas\Diactoros\Response\HtmlResponse;
 use Laminas\Diactoros\Response\RedirectResponse;
 use Laminas\Diactoros\Uri;
 use Mezzio\Authentication\Session\PhpSession;
 use Mezzio\Authentication\UserInterface;
 use Mezzio\Session\SessionInterface;
+use Mezzio\Template\TemplateRendererInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
-use Laminas\Diactoros\Response\HtmlResponse;
-use Mezzio\Template\TemplateRendererInterface;
 
 class LoginHandler implements RequestHandlerInterface
 {
     private const REDIRECT_ATTRIBUTE = 'authentication:redirect';
 
     /** @var PhpSession */
-    private $adapter;
+    private PhpSession $adapter;
 
     /** @var TemplateRendererInterface */
-    private $renderer;
+    private TemplateRendererInterface $renderer;
 
     public function __construct(TemplateRendererInterface $renderer, PhpSession $adapter)
     {

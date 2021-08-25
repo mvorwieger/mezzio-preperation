@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="Project Files" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b0686948-a531-401e-99f1-1660686240c6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ADDITIONAL_INFO.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phpstan.neon" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/012f86fa-08f4-489e-82a0-73c939baeefa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/012f86fa-08f4-489e-82a0-73c939baeefa.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ADDITIONAL_INFO.md" beforeDir="false" afterPath="$PROJECT_DIR$/ADDITIONAL_INFO.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/src/ConfigProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/src/ConfigProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/src/Handler/CarPageHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/src/Handler/CarPageHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/src/Handler/CarPageHandlerFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/src/Handler/CarPageHandlerFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/src/Handler/HomePageHandler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/src/Handler/HomePageHandlerFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/src/Handler/PingHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/src/Handler/PingHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/src/Login/LoginHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/src/Login/LoginHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/templates/app/home-page.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/templates/app/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/templates/app/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/templates/layout/default.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/templates/layout/default.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tt.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +46,7 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.0">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
       <path value="$PROJECT_DIR$/vendor/composer" />
@@ -139,7 +160,22 @@
       <path value="$PROJECT_DIR$/vendor/dflydev/fig-cookies" />
       <path value="$PROJECT_DIR$/vendor/mezzio/mezzio-authentication-session" />
       <path value="$PROJECT_DIR$/vendor/mezzio/mezzio-session-ext" />
+      <path value="$PROJECT_DIR$/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/php-cs-fixer/diff" />
+      <path value="$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer" />
+      <path value="$PROJECT_DIR$/vendor/phpstan/phpstan" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
     </include_path>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="2" />
   </component>
   <component name="ProjectId" id="1xDvHU28pvS5DGRi6jpv9ChNKX7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -152,13 +188,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/App/src/Handler" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/phpstan.neon" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.101338446" />
     <property name="project.structure.side.proportion" value="0.25159422" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.phpOptions" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -181,7 +218,11 @@
       <option name="presentableId" value="Default" />
       <updated>1629902385755</updated>
       <workItem from="1629902387139" duration="1564000" />
-      <workItem from="1629903966170" duration="6487000" />
+      <workItem from="1629903966170" duration="10236000" />
+      <workItem from="1629915816910" duration="214000" />
+      <workItem from="1629916047657" duration="425000" />
+      <workItem from="1629916490302" duration="50000" />
+      <workItem from="1629916557187" duration="379000" />
     </task>
     <servers />
   </component>
@@ -198,6 +239,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
