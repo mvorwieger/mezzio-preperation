@@ -1,0 +1,9 @@
+version: '3'
+services:
+  php:
+    build: .
+    volumes:
+      - ./:/var/www
+    ports:
+      - 8080:8080
+      - 9000:9000
